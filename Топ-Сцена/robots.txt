@@ -1,0 +1,33 @@
+# Robots.txt для сайта ТОП-сцена
+# https://top-scena.ru/robots.txt
+
+User-agent: *
+Allow: /
+
+# Разрешаем индексацию всех страниц
+Allow: /index.html
+Allow: /contest.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /imgs/
+
+# Запрещаем индексацию служебных файлов
+Disallow: /*.json$
+Disallow: /*?*
+
+# Sitemap
+Sitemap: https://top-scena.ru/sitemap.xml
+
+# Crawl-delay для вежливости (опционально)
+Crawl-delay: 1
+
+# Специальные правила для основных поисковых систем
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
